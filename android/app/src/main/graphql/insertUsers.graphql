@@ -1,0 +1,8 @@
+mutation Some ($usersinput:[UsersInput]){
+  addUsers (
+    users: $usersinput
+  ) {
+    id
+    name
+  }
+}

@@ -30,19 +30,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SerachQuery q = SerachQuery.builder().build().builder().build();
-        ApolloCall<SerachQuery.Data> users = apolloClient.query(q);
-        users.enqueue(new ApolloCall.Callback<SerachQuery.Data>() {
-            @Override
-            public void onResponse(@NotNull Response<SerachQuery.Data> response) {
-                SerachQuery.Data data = response.data();
-                Log.d("respone", "response = " + data.toString());
-            }
-
-            @Override
-            public void onFailure(@NotNull ApolloException e) {
-                Log.d("error = ", e.toString());
-            }
-        });
     }
 }
