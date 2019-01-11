@@ -1,0 +1,10 @@
+mutation insert_user($objects: [user_insert_input!]!,$on_conflict: user_on_conflict){
+  insert_user(objects: $objects, on_conflict: $on_conflict){
+    affected_rows
+    returning{
+      nikename
+      genber
+      age
+    }
+  }
+}

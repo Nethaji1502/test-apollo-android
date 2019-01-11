@@ -1,0 +1,11 @@
+query fetch_users {
+  user {
+    id
+    age
+    nikename
+    addresssByuserid {
+      city
+      id
+    }
+  }
+}

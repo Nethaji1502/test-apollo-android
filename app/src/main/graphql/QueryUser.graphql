@@ -1,0 +1,13 @@
+query Serach{
+  user{
+    nikename
+    genber
+    age
+    addresssByuserid{
+      id
+      street
+      city
+      county
+    }
+  }
+}
