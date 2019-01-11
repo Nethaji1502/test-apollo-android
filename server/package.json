@@ -1,0 +1,20 @@
+{
+  "name": "testgqlsv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.3.1",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.3"
+  },
+  "devDependencies": {
+    "esm": "^3.0.84"
+  }
+}
